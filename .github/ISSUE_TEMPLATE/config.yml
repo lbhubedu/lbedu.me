@@ -1,8 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: Relatar uma vulnerabilidade
-    url: https://github.com/lbconsultoriadigital/lbedu.me/security/policy
-    about: Use o canal privado descrito na Política de Segurança.
-  - name: Site do LBedu
-    url: https://lbedu.me
-    about: Consulte os guias e recursos publicados.

@@ -1,101 +1,128 @@
-# LBedu
+# LBEdu — Tecnologia que transforma vidas
 
-> Receitas open source de IA que você copia, testa e adapta.
+> Website oficial da iniciativa [lbedu.me](https://lbedu.me) — Conectando computadores recuperados e educação em inteligência artificial a quem mais precisa.
 
-[![Quality checks](https://github.com/lbconsultoriadigital/lbedu.me/actions/workflows/quality.yml/badge.svg)](https://github.com/lbconsultoriadigital/lbedu.me/actions/workflows/quality.yml)
-[![License: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-yellow.svg)](LICENSE)
-[![PRs welcome](https://img.shields.io/badge/PRs-bem--vindos-brightgreen.svg)](CONTRIBUTING.md)
+---
 
-O **LBedu** é um projeto educacional, não comercial e aberto para quem quer transformar IA em algo reproduzível. Aqui, prompts, agentes, automações e integrações são publicados com instruções claras, limitações explícitas e caminhos para adaptação.
+## 📌 Sobre a iniciativa
 
-[Site](https://lbedu.me) · [Guias](docs/guides/index.md) · [Contribua](CONTRIBUTING.md) · [Roadmap](ROADMAP.md)
+A **LBEdu** é uma iniciativa social baseada em São Paulo dedicada a democratizar o acesso à tecnologia e à educação digital:
 
-## Comece por uma receita
+- 💻 **Recuperação e Doação de Computadores**: Equipamentos em desuso são revisados, higienizados, equipados com sistemas otimizados e entregues para pessoas de baixa renda e pessoas com deficiência.
+- 🤖 **Aulas Gratuitas de Inteligência Artificial**: Capacitação prática e acessível para que os beneficiários utilizem ferramentas de IA no dia a dia, nos estudos e no mercado de trabalho.
+- 🤝 **Parcerias Corporativas**: Empresas doam computadores corporativos substituídos e recebem workshops e palestras de IA para suas equipes como contrapartida.
 
-| Receita | O que você aprende | Tempo | Requisitos |
-| --- | --- | ---: | --- |
-| [Prompt de Engenheiro de Software](prompts/software-engineer.md) | Estruturar respostas com arquitetura, segurança e testes | 5 min | Um assistente de IA |
-| [Agente mínimo em Python](templates/python-agent-boilerplate/README.md) | Registrar ferramentas e executar entradas com segurança | 10 min | Python 3.10+ |
-| [Claude com streaming em Node.js](templates/node-claude-quickstart/README.md) | Consumir a API oficial com respostas em streaming | 10 min | Node.js 18+ e chave da Anthropic |
+---
 
-Quer entender o projeto antes de executar algo? Consulte o [guia de início rápido](docs/guides/getting-started.md).
+## 🚀 Tecnologias
 
-## O que torna uma receita LBedu
+O site foi construído com foco em performance, acessibilidade e design contemporâneo:
 
-Cada receita deve apresentar:
+- **[React 19](https://react.dev/)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[Vite 7](https://vite.dev/)** + [`vite-plugin-singlefile`](https://github.com/richardtallent/vite-plugin-singlefile)
+- **[Tailwind CSS v4](https://tailwindcss.com/)**
+- **[Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)**, **[Anton](https://fonts.google.com/specimen/Anton)** & **[JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono)**
 
-1. problema específico;
-2. resultado esperado;
-3. forma de testar ou demonstração;
-4. instruções de uso em poucos minutos;
-5. requisitos, custos e compatibilidade;
-6. limitações, riscos e cuidados de segurança;
-7. caminhos para adaptação;
-8. autoria e contribuições.
+---
 
-Veja o [padrão completo de receitas](docs/guides/recipe-format.md).
+## 🛠️ Como executar localmente
 
-## Inventário atual
+### Pré-requisitos
 
-- [`prompts/`](prompts/README.md): dois prompts de sistema bilíngues para engenharia de software e arquitetura de agentes.
-- [`templates/`](templates/README.md): um exemplo seguro em Python e um quickstart da API Claude em Node.js.
-- [`mcp-servers/`](mcp-servers/README.md): material introdutório bilíngue sobre Model Context Protocol; implementações executáveis estão no roadmap.
-- [`docs/guides/`](docs/guides/index.md): guias de início e padrões editoriais.
+- Node.js (versão 20 ou superior recomendada)
+- npm
 
-O README descreve somente recursos que existem no repositório. Novas integrações entram depois de implementadas, testadas e documentadas.
+### Passo a passo
 
-## Execute localmente
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/lbhubedu/lbedu.me.git
+   cd lbedu.me
+   ```
 
-```bash
-git clone https://github.com/lbconsultoriadigital/lbedu.me.git
-cd lbedu.me
+2. Instale as dependências:
+   ```sh
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+   ```sh
+   npm run dev
+   ```
+
+4. Acesse no navegador em `http://localhost:5173`.
+
+---
+
+## 📦 Build e Publicação
+
+Para gerar o pacote estático para produção:
+
+```sh
+npm run build
 ```
 
-### Exemplo Python
+Para visualizar o build localmente:
 
-```bash
-cd templates/python-agent-boilerplate
-python main.py
-python -m unittest
+```sh
+npm run preview
 ```
 
-### Exemplo Node.js
+Os arquivos estáticos otimizados são gerados no diretório `dist/`.
 
-```bash
-cd templates/node-claude-quickstart
-npm ci
-cp .env.example .env
-npm start
+### Deploy na Vercel
+
+1. Importe o repositório `lbhubedu/lbedu.me` na [Vercel](https://vercel.com/).
+2. O preset Vite será detectado automaticamente:
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+3. Não são necessárias variáveis de ambiente ou infraestrutura de backend.
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+lbedu.me/
+├── public/                 # Favicon, imagens e assets públicos estáticos
+│   ├── favicon.svg
+│   ├── CNAME               # Configuração de domínio customizado (lbedu.me)
+│   └── images/             # Fotos e ilustrações do projeto
+├── src/
+│   ├── App.tsx             # Componente raiz: seções, formulário de contato e navegação
+│   ├── Brand.tsx           # Componentes de identidade visual e logo LBedu
+│   ├── index.css           # Estilos globais, temas e tipografia com Tailwind CSS
+│   ├── main.tsx            # Ponto de entrada React DOM
+│   ├── three.tsx           # Ilustrações e efeitos 3D leves em CSS/SVG
+│   └── utils/
+│       └── cn.ts           # Utilitário de composição de classes (clsx + tailwind-merge)
+├── index.html              # HTML base com meta tags, Open Graph e tipografia
+├── package.json            # Metadados e dependências do projeto
+├── tsconfig.json           # Configuração TypeScript
+└── vite.config.ts          # Configuração do Vite e plugins
 ```
 
-O exemplo Node.js requer uma chave válida da Anthropic. Nunca publique arquivos `.env` ou credenciais.
+---
 
-## Contribua em 10 minutos
+## ♿ Acessibilidade e Inclusão
 
-Você não precisa começar com código. É possível:
+- Navegação completa por teclado com atalhos de salto para conteúdo principal (`#top`).
+- Indicador visual claro de foco (`focus-visible`).
+- Menu mobile responsivo com fechamento pela tecla `Escape` e backdrop acessível.
+- Suporte total a `prefers-reduced-motion` com botão no rodapé para pausar animações.
+- Textos alternativos (`alt`) descritivos em todas as imagens.
 
-- relatar um problema;
-- melhorar uma explicação;
-- testar uma receita e registrar o resultado;
-- sugerir uma adaptação;
-- propor uma nova receita pelo formulário de issue.
+---
 
-Leia o [guia de contribuição](CONTRIBUTING.md), escolha um item marcado como `good first issue` ou use um dos formulários em [Issues](https://github.com/lbconsultoriadigital/lbedu.me/issues/new/choose).
+## 🔒 Privacidade e Contato
 
-## Qualidade e transparência
+- O formulário de contato processa todos os dados localmente no navegador e prepara a mensagem diretamente para o cliente de e-mail do usuário (`lb@lbedu.me`, com cópia para `lbedu.me@gmail.com`).
+- Opção integrada para copiar o texto formatado para a área de transferência.
+- Nenhum dado pessoal é transmitido para servidores de terceiros ou armazenado em banco de dados.
 
-- links internos são validados automaticamente;
-- os exemplos Python e Node.js passam por verificações no GitHub Actions;
-- custos, dependências e limitações devem ser declarados;
-- exemplos educacionais não são apresentados como soluções prontas para produção;
-- contribuições podem receber crédito no histórico, na receita correspondente e nas notas de release, quando aplicável.
+---
 
-Consulte também [Segurança](SECURITY.md), [Suporte](SUPPORT.md), [Código de Conduta](CODE_OF_CONDUCT.md) e [Changelog](CHANGELOG.md).
+## 📄 Licença
 
-## English summary
-
-**LBedu** is a Portuguese-first, noncommercial open-source project for practical AI recipes you can copy, test, and adapt. Every accepted resource should include a reproducible outcome, setup instructions, requirements, limitations, safety notes, and contributor credit. Start with the recipes above or read the [contribution guide](CONTRIBUTING.md).
-
-## Licença
-
-Distribuído sob a [licença MIT](LICENSE).
+Distribuído sob a licença [MIT](LICENSE).
