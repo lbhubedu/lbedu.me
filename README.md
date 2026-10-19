@@ -125,4 +125,5 @@ lbedu.me/
 
 ## 📄 Licença
 
-Distribuído sob a licença [MIT](LICENSE).
+- **Código-fonte:** Disponibilizado sob a licença [MIT](LICENSE). O uso da base técnica e arquitetura para outros projetos e iniciativas sociais é livre e encorajado.
+- **Marca e Conteúdo:** O nome **LBEdu**, logotipos, identidade visual, textos institucionais e imagens em `public/images/` são de propriedade exclusiva da iniciativa LBEdu e têm seus direitos autorais reservados (*All Rights Reserved*).

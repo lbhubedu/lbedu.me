@@ -19,3 +19,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+### Exceções de Marca, Identidade Visual e Conteúdo / Trademark & Content Notice
+
+O código-fonte deste repositório (arquitetura, componentes React, scripts TypeScript, arquivos CSS e configurações de build) é livre e disponibilizado sob a licença MIT acima descrita.
+
+Ficam expressamente **excluídos** da concessão de direitos da licença MIT e protegidos sob direitos autorais reservados (*All Rights Reserved*):
+
+1. **Marca e Identidade:** O nome "LBEdu", variações associadas, logotipos e símbolos da marca.
+2. **Textos Autorais:** Os textos institucionais da iniciativa, história, cópias editoriais e manifesto.
+3. **Mídias e Fotografias:** As imagens e fotografias presentes no repositório (incluindo o diretório `public/images/`).
+
+O uso da estrutura de código e templates como base técnica para outros projetos sociais e comunitários é expressamente bem-vindo e encorajado, desde que o nome da marca, logotipos, contatos e conteúdos institucionais sejam substituídos pelos de sua própria iniciativa.
