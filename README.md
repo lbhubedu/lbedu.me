@@ -1,129 +1,62 @@
-# LBEdu — Tecnologia que transforma vidas
+<div align="center">
 
-> Website oficial da iniciativa [lbedu.me](https://lbedu.me) — Conectando computadores recuperados e educação em inteligência artificial a quem mais precisa.
+# LBEdu
 
----
+### Tecnologia que transforma vidas
 
-## 📌 Sobre a iniciativa
+Recuperar tecnologia. Compartilhar conhecimento. Criar possibilidades.
 
-A **LBEdu** é uma iniciativa social baseada em São Paulo dedicada a democratizar o acesso à tecnologia e à educação digital:
+[Conheça a LBEdu](https://lbedu.me) · [Patrocinadora: Papelaria Piti](https://www.piti.com.br/) · [English](README.en.md)
 
-- 💻 **Recuperação e Doação de Computadores**: Equipamentos em desuso são revisados, higienizados, equipados com sistemas otimizados e entregues para pessoas de baixa renda e pessoas com deficiência.
-- 🤖 **Aulas Gratuitas de Inteligência Artificial**: Capacitação prática e acessível para que os beneficiários utilizem ferramentas de IA no dia a dia, nos estudos e no mercado de trabalho.
-- 🤝 **Parcerias Corporativas**: Empresas doam computadores corporativos substituídos e recebem workshops e palestras de IA para suas equipes como contrapartida.
+</div>
 
 ---
 
-## 🚀 Tecnologias
+## Nossa missão
 
-O site foi construído com foco em performance, acessibilidade e design contemporâneo:
+A **LBEdu** é uma iniciativa social criada por Felipe Leone, em São Paulo, para aproximar a tecnologia de quem tem menos oportunidades de acesso. O projeto une o reaproveitamento de computadores à educação digital e ao uso acessível e responsável da inteligência artificial.
 
-- **[React 19](https://react.dev/)**
-- **[TypeScript](https://www.typescriptlang.org/)**
-- **[Vite 7](https://vite.dev/)** + [`vite-plugin-singlefile`](https://github.com/richardtallent/vite-plugin-singlefile)
-- **[Tailwind CSS v4](https://tailwindcss.com/)**
-- **[Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)**, **[Anton](https://fonts.google.com/specimen/Anton)** & **[JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono)**
+A iniciativa é conduzida por pessoa física e está em desenvolvimento. Nosso propósito é criar caminhos para que mais pessoas possam aprender, desenvolver autonomia e descobrir novas possibilidades com a tecnologia.
 
----
+## Como queremos transformar acesso em oportunidade
 
-## 🛠️ Como executar localmente
+- **Recuperação e doação:** receber computadores e peças, avaliar as condições de cada equipamento e prepará-los para um novo uso, sempre que possível.
+- **Inclusão digital:** aproximar computadores e conhecimento de pessoas de baixa renda e pessoas com deficiência.
+- **Educação em tecnologia e IA:** incentivar o aprendizado gratuito, com linguagem simples e atenção à privacidade, à segurança e aos limites da inteligência artificial.
+- **Parcerias:** conectar pessoas e empresas dispostas a doar equipamentos, compartilhar conhecimento ou apoiar a iniciativa.
 
-### Pré-requisitos
+A disponibilidade de equipamentos, aulas e ações depende da capacidade do projeto e das parcerias em cada momento. Entre em contato para conhecer as possibilidades atuais.
 
-- Node.js (versão 20 ou superior recomendada)
-- npm
+## Projetos relacionados
 
-### Passo a passo
+A LBEdu também reúne ideias e ferramentas voltadas a tornar a tecnologia mais compreensível e acessível:
 
-1. Clone o repositório:
-   ```sh
-   git clone https://github.com/lbhubedu/lbedu.me.git
-   cd lbedu.me
-   ```
+- **LB Learn** — projeto que propõe explicar repositórios, aplicativos e conceitos de tecnologia em linguagem simples. Seu repositório está privado no momento.
+- **[LB do Linux](https://lb-linux.vercel.app)** — guia em português para conhecer distribuições Linux e aprender a utilizá-las, inclusive em computadores antigos. O repositório de código está privado no momento.
+- **[LB Design](https://github.com/lbhubedu/lb-design)** — biblioteca de referências e prompts de design em português para apoiar a criação de interfaces e projetos digitais.
 
-2. Instale as dependências:
-   ```sh
-   npm install
-   ```
+Cada projeto tem seu próprio estágio de desenvolvimento, disponibilidade e licença. Consulte a documentação correspondente para conhecer suas condições atuais.
 
-3. Inicie o servidor de desenvolvimento:
-   ```sh
-   npm run dev
-   ```
+## Patrocinadora
 
-4. Acesse no navegador em `http://localhost:5173`.
+A **[Papelaria Piti](https://www.piti.com.br/)** é patrocinadora da LBEdu. Fundada em 1993, a Piti atua com materiais escolares e de escritório para escolas, famílias e empresas.
 
----
+## Como participar
 
-## 📦 Build e Publicação
+Você pode contribuir com equipamentos, conhecimento, tempo ou parcerias. Para conversar sobre doações, aulas, voluntariado ou ações para empresas, acesse [lbedu.me](https://lbedu.me) ou escreva para [lb@lbedu.me](mailto:lb@lbedu.me).
 
-Para gerar o pacote estático para produção:
+Antes de doar um computador, faça uma cópia dos arquivos importantes e remova seus dados pessoais, se possível. Caso precise de orientação, entre em contato antes da entrega.
 
-```sh
-npm run build
-```
+### Doações via Pix
 
-Para visualizar o build localmente:
+Para apoiar financeiramente a LBEdu, use a chave Pix: **lb@lbedu.me**.
 
-```sh
-npm run preview
-```
+## Sobre este repositório
 
-Os arquivos estáticos otimizados são gerados no diretório `dist/`.
+Este repositório contém o código do site da LBEdu. O projeto usa **React, TypeScript, Vite e Tailwind CSS**. O formulário de contato prepara uma mensagem para envio pelo aplicativo de e-mail da pessoa visitante.
 
-### Deploy na Vercel
+Para contribuir com o código, consulte [CONTRIBUTING.md](CONTRIBUTING.md).
 
-1. Importe o repositório `lbhubedu/lbedu.me` na [Vercel](https://vercel.com/).
-2. O preset Vite será detectado automaticamente:
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-3. Não são necessárias variáveis de ambiente ou infraestrutura de backend.
+## Licença
 
----
-
-## 📂 Estrutura do Projeto
-
-```
-lbedu.me/
-├── public/                 # Favicon, imagens e assets públicos estáticos
-│   ├── favicon.svg
-│   ├── CNAME               # Configuração de domínio customizado (lbedu.me)
-│   └── images/             # Fotos e ilustrações do projeto
-├── src/
-│   ├── App.tsx             # Componente raiz: seções, formulário de contato e navegação
-│   ├── Brand.tsx           # Componentes de identidade visual e logo LBedu
-│   ├── index.css           # Estilos globais, temas e tipografia com Tailwind CSS
-│   ├── main.tsx            # Ponto de entrada React DOM
-│   ├── three.tsx           # Ilustrações e efeitos 3D leves em CSS/SVG
-│   └── utils/
-│       └── cn.ts           # Utilitário de composição de classes (clsx + tailwind-merge)
-├── index.html              # HTML base com meta tags, Open Graph e tipografia
-├── package.json            # Metadados e dependências do projeto
-├── tsconfig.json           # Configuração TypeScript
-└── vite.config.ts          # Configuração do Vite e plugins
-```
-
----
-
-## ♿ Acessibilidade e Inclusão
-
-- Navegação completa por teclado com atalhos de salto para conteúdo principal (`#top`).
-- Indicador visual claro de foco (`focus-visible`).
-- Menu mobile responsivo com fechamento pela tecla `Escape` e backdrop acessível.
-- Suporte total a `prefers-reduced-motion` com botão no rodapé para pausar animações.
-- Textos alternativos (`alt`) descritivos em todas as imagens.
-
----
-
-## 🔒 Privacidade e Contato
-
-- O formulário de contato processa todos os dados localmente no navegador e prepara a mensagem diretamente para o cliente de e-mail do usuário (`lb@lbedu.me`, com cópia para `lbedu.me@gmail.com`).
-- Opção integrada para copiar o texto formatado para a área de transferência.
-- Nenhum dado pessoal é transmitido para servidores de terceiros ou armazenado em banco de dados.
-
----
-
-## 📄 Licença
-
-- **Código-fonte:** Disponibilizado sob a licença [MIT](LICENSE). O uso da base técnica e arquitetura para outros projetos e iniciativas sociais é livre e encorajado.
-- **Marca e Conteúdo:** O nome **LBEdu**, logotipos, identidade visual, textos institucionais e imagens em `public/images/` são de propriedade exclusiva da iniciativa LBEdu e têm seus direitos autorais reservados (*All Rights Reserved*).
+O código-fonte é disponibilizado sob a [licença MIT](LICENSE). A licença do repositório também descreve as restrições aplicáveis à marca, à identidade visual, aos textos institucionais e às imagens. Consulte-a antes de reutilizar esses materiais.
